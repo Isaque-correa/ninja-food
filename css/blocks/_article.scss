@@ -1,0 +1,275 @@
+.article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3.125rem 0 0;
+
+    @include desk-2 {
+        padding: 6.25rem 0 0;
+    }
+
+    .blog__intro {
+        margin: 1.875rem 0 0;
+    }
+
+    .container-post {
+        .secundaria {
+            box-shadow: 0px 6px 13px var(--c-grey)
+        }
+    }
+
+    &__categoria {
+        margin: 0 0 .875rem 0;
+        padding: .3125rem 0;
+        font-size: .875rem;
+        text-align: center;
+        border-radius: .1875rem;
+        background: var(--c-blue-dark);
+        color: var(--c-white);
+        font-family: var(--ff-roboto);
+        font-weight: 500;
+        width: 4.5625rem;
+    }
+
+    &__title {
+        font-family: var(--ff-merriweather);
+        font-weight: 700;
+        font-size: 1.5rem;
+        margin: .5rem 0;
+        line-height: 1.875rem;
+        @include desk-2 {
+            line-height: 3.6138rem;
+            font-size: 2.875rem;
+            margin: 0 0 1.125rem;
+        }
+
+    }
+
+    &__data {
+        font-family: var(--ff-merriweather);
+        font-weight: 400;
+        color: var(--c-grey);
+        font-size: .875rem;
+
+        @include desk-2 {
+            margin: 0 0 1.125rem;
+        }
+    }
+
+    figure {
+        margin: 0;
+        padding: 0 .75rem 0;
+
+        @include desk {
+            padding: 0px;
+        }
+    }
+
+    &__img-principal {
+        width: 100%;
+    }
+
+    figcaption {
+        color: var(--c-grey-dark);
+        font-weight: 400;
+        font-family: var(--ff-roboto);
+    }
+
+    &__authorCover {
+        display: flex;
+        gap: .875rem;
+        margin: 1.25rem 0 0;
+    }
+
+    &__author {
+        height: fit-content;
+    }
+
+    &__nameAuthor {
+        font-family: var(--ff-merriweather);
+        font-weight: 700;
+        color: var(--c-black);
+
+        @include desk-2 {
+            font-size: .875rem;
+        }
+    }
+
+    &__intro {
+        font-family: var(--ff-roboto);
+        font-weight: 500;
+        font-size: 1.625rem;
+        margin: 1.875rem 0;
+        line-height: 1.875rem;
+        @include desk-2{
+            line-height: 2.6rem;
+
+        }
+    }
+
+    &__description {
+        font-family: var(--ff-roboto);
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 2rem;
+        color: #434343;
+        margin: 1.25rem 0;
+    }
+
+    &__post-food {
+        display: flex;
+        flex-direction: column;
+        background-color: var(--c-silver);
+        padding: 35px;
+        gap: 15px;
+        margin: 1.25rem 0 2.5rem;
+        border-radius: .4375rem;
+
+        h4 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            font-family: var(--ff-merriweather);
+            margin: 0;
+        }
+
+        a {
+            color: var(--c-grey-dark);
+        }
+    }
+
+    &__post-title {
+        font-size: 1.5rem;
+        font-family: var(--ff-merriweather);
+        font-weight: 700;
+        line-height: 2.4rem;
+        margin: 1.875rem 0 0;
+    }
+
+
+    .blog__more {
+        padding: .75rem;
+
+        .cover {
+            margin: 0;
+            display: grid;
+
+            @include desk {
+                margin: 30px 0;
+                padding: 0;
+                grid-template-columns: 0.5fr 1fr;
+
+            }
+
+            gap: 34px;
+            padding: 12px 12px 29px;
+
+        }
+
+        img {
+            width: 100%;
+        }
+
+        h3 {
+            font-size: 1.875rem;
+            font-weight: 700;
+            font-family: var(--ff-merriweather);
+            margin: 0 .75rem 1.875rem;
+        }
+
+        h4 {
+            font-size: .9375rem;
+            font-weight: 700;
+            font-family: var(--ff-merriweather);
+            margin: 0;
+
+        }
+
+        .more-description {
+            font-size: .8125rem;
+            margin: 0;
+
+            a {
+                font-family: var(--ff-merriweather);
+                font-weight: 700;
+                font-size: 1.5rem;
+                line-height: 2.4rem;
+                text-decoration: none;
+                color: var(--c-black);
+            }
+
+            p {
+                font-weight: 400;
+                font-size: 1.125rem;
+                font-weight: 1.8rem;
+            }
+        }
+    }
+
+    .blog__author-cover2 {
+        padding: 2.75rem 1.9375rem !important;
+        background-color: var(--c-silver);
+        border-radius: .3125rem;
+        align-items: center;
+        margin: 0 0 3.125rem;
+        gap: 1.75rem;
+        @include mobile{
+            display: flex;
+        }
+        @include desk {
+            margin: 6.25rem 0 !important;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        h5 {
+            font-size: 1.25rem;
+            font-weight: 400;
+            font-family: var(--ff-merriweather);
+            margin: .625rem 0 1.25rem;
+            color: var(--c-black);
+            @include desk-2{
+                font-size: 1.5rem;
+            }
+        }
+
+        p {
+            font-size: .9375rem;
+            font-family: var(--ff-roboto);
+            font-weight: 400;
+            margin: 0 0 1.25rem;
+            @include desk-2{
+                font-size: 1.125rem;
+            }
+        }
+    }
+
+    .post-food {
+        padding: .75rem;
+
+    }
+
+    .newsletter-post {
+        gap: 1.25rem;
+        width: 100%;
+        padding: 0;
+
+        .newsletter__posts {
+            margin: 50px 0 0;
+
+            @include desk {
+                margin: 0;
+            }
+        }
+
+        @include desk-2 {
+            margin: 0;
+            width: auto;
+        }
+
+        form {
+            margin: 0;
+        }
+    }
+}

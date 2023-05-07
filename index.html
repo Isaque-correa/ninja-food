@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Ninja Food</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header__container">
+
+            <div class="header__container-mob">
+                <a href="./index.html" class="header__slogan">Food Ninja</a>
+                <div class="icon-mob icon-mob-radius" onclick="menuShow()">
+                    <span class="icon-bar" ></span>
+                </div>
+            </div>
+            <nav class="header__menu-mob menu-mob">
+                <ul>
+                    <li><a href="./post.html">Blog</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+    <main class="main">
+        <div class="container main__container">
+
+            <h1 class="main__title">The Food Ninja Blog</h1>
+            <p class="main__description">A blog about food, experiences, and recipes.</p>
+            <div class="main__filter-container">
+                <input class="main__filter" type="text" placeholder="Search for articles">
+            </div>
+    
+            <section class="blogList">
+                <figure>
+                    <img class="blogList__img-principal" src="./image/paisagem.png" />
+                    <p class="blogList__categoria">Travel</p>
+                    <h3 class="blogList__title">What Traveling Greece For 2 Weeks Taught Me About Life</h3>
+                    <p class="blogList__data">Jun 21, 2021 • 11 min read</p>
+                    <figcaption>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam mollis lectus vitae nulla
+                        malesuada amet purus sed. A condimentum tempus a egestas sodales diam cras.</figcaption>
+                    <div class="blogList__authorCover">
+                        <img class="blogList__imgAuthor" src="./image/author.png" alt="">
+                        <p class="blogList__nameAuthor">George Costanza</p>
+                    </div>
+                </figure>
+                <figure>
+                    <img class="blogList__img-principal" src="./image/food.png" />
+                    <p class="blogList__categoria">Travel</p>
+                    <h3 class="blogList__title">Why You Should Never Order 12 Chicken Nuggets and Fries</h3>
+                    <p class="blogList__data">Jun 21, 2021 • 11 min read</p>
+                    <figcaption>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam mollis lectus vitae nulla
+                        malesuada amet purus sed. A condimentum tempus a egestas sodales diam cras.</figcaption>
+                    <div class="blogList__authorCover">
+                        <img class="blogList__imgAuthor" src="./image/author.png" alt="">
+                        <p class="blogList__nameAuthor">George Costanza</p>
+                    </div>
+                </figure>
+    
+            </section>
+            <div class="blogList__pagination">
+                <ul>
+                    <li class="blogList__list-1"><a href="#">1</a></li>
+                    <li class="blogList__list"><a href="#">2</a></li>
+                    <li class="blogList__list"><a href="#">3</a></li>
+                    <li class="blogList__list"><a href="#">4</a></li>
+                    <li class="blogList__list-2"><a href="#">...</a></li>
+                    <li class="blogList__list"><a href="#">13</a></li>
+                </ul>
+            </div>
+            <section class="newsletter">
+    
+                <form action="newsletter__container">
+                    <p class="newsletter__title">Subscribe To Our Newsletter</p>
+                    <p class="newsletter__description">Get weekly food news, articles, and videos delivered to your inbox.
+                    </p>
+                    <input type="text" placeholder="Email">
+                    <button>Sign Up</button>
+                </form>
+                <div class="newsletter__posts">
+                    <p class="newsletter__post-title">POPULAR POSTS</p>
+                    <a href="#" class="newsletter__post-description">How To Have Your Cake and Eat It Too: The Way of The Chicken Man
+                    </a>
+                    <a href="#" class="newsletter__post-description">My Grandma’s 30-year-old Recipe</a>
+                    <a href="#" class="newsletter__post-description">What I learned about cooking from Ratatoulie</a>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <p>Copyright © 2021 Food Ninja Blog. All Rights Reserved.</p>
+    </footer>
+
+    <script src="/js/main.js"></script>
+</body>
+
+</html>

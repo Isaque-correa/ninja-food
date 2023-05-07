@@ -1,0 +1,130 @@
+.blogList {
+    @include desk {
+        display: flex;
+        //padding: 0 5.3125rem;
+        gap: 5rem;
+        margin: 5rem 0 0;
+    }
+    &__post{
+        margin: 0;
+        padding: 0 0.75rem;
+    }
+
+    figure {
+        margin: 0;
+        padding: 5rem .75rem 0;
+
+        @include desk {
+            padding: 0px;
+        }
+    }
+
+    &__img-principal {
+        width: 100%;
+    }
+
+    &__categoria {
+        margin: .625rem 0 0;
+        padding: .3125rem 0;
+        font-size: .875rem;
+        text-align: center;
+        border-radius: .1875rem;
+        background: var(--c-blue-dark);
+        color: var(--c-white);
+        font-family: var(--ff-roboto);
+        font-weight: 500;
+        width: 4.5625rem;
+    }
+
+    &__title {
+        font-family: var(--ff-merriweather);
+        font-weight: 700;
+        font-size: 1.5rem;
+        margin: .5rem 0;
+       
+    }
+
+    &__data {
+        font-size: var(--ff-merriweather);
+        font-weight: 400;
+        color: var(--c-grey);
+    }
+
+    figcaption {
+        color: var(--c-grey-dark);
+        font-weight: 400;
+        font-family: var(--ff-roboto);
+    }
+
+    &__authorCover {
+        display: flex;
+        gap: .875rem;
+        margin: 1rem 0 0;
+    }
+
+    &__author {
+        height: fit-content;
+    }
+
+    &__nameAuthor {
+        font-family: var(--ff-merriweather);
+        font-weight: 700;
+        color: var(--c-black);
+    }
+
+    &__pagination {
+        ul {
+            display: flex;
+            gap: .625rem;
+            padding: 0;
+            width: 100%;
+            justify-content: center;
+            margin: 75px 0 0;
+
+            @include desk {
+                margin: 9.5rem 0 0;
+                gap: 1.25rem;
+            }
+
+        }
+    }
+
+    &__list {
+        list-style: none;
+        background-color: var(--c-silver);
+        border-radius: 50%;
+        padding: .5rem .75rem;
+
+        a {
+            font-family: var(--ff-roboto);
+            text-decoration: none;
+            font-weight: 700;
+            color: var(--c-grey-dark);
+        }
+
+
+    }
+
+    &__list-1 {
+        background-color: var(--c-blue-dark);
+        color: var(--c-white);
+        border-radius: 50%;
+        padding: .5rem .75rem;
+
+        a {
+            color: var(--c-white);
+            text-decoration: none;
+        }
+
+    }
+
+    &__list-2 {
+        list-style: none;
+        display: flex;
+        align-items: center;
+
+        a {
+            text-decoration: none;
+        }
+    }
+}

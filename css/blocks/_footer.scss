@@ -1,0 +1,32 @@
+.footer{
+    background-color: var(--c-silver);
+    margin: 2.5rem 0 0;
+    ul{
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        gap: .625rem;
+        @include desk{
+            gap: 1.5625rem;
+        }
+
+        li{
+            list-style: none;
+            margin: 2.25rem 0 0;            
+            a{
+                text-decoration: none;
+                font-family: var(--ff-merriweather);
+                color: var(--c-grey);
+                font-size: .875rem;
+            }
+        }
+    }
+    p{
+        font-family: var(--ff-merriweather);
+        font-weight: 700;
+        margin: 0;
+        padding: 1.625rem 0rem 2.25rem;
+        font-size: 14px;
+        text-align: center;
+    }
+}

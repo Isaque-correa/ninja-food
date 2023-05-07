@@ -1,0 +1,61 @@
+.main {
+    @include desk {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__title {
+        font-family: var(--ff-merriweather);
+        font-weight: 900;
+        color: var(--c-blue-dark);
+        text-align: center;
+        margin: 6.4375rem 0 0;
+        //font-size: 1.5rem;
+
+        @include desk {
+            font-size: 3rem;
+        }
+    }
+
+    &__description {
+        color: var(--c-grey);
+        text-align: center;
+        //font-size: .625rem;
+        font-family: var(--ff-roboto);
+        font-weight: 400;
+        margin: 10px 0 0;
+
+        @include desk {
+            font-size: 1.25rem;
+        }
+    }
+
+    &__filter-container {
+        width: 100%;
+        justify-content: center;
+        display: flex;
+        margin: 2rem 0 0;
+    }
+
+    &__filter {
+        border: .0625rem solid #DDD;
+        padding: .5625rem .875rem;
+        border-radius: .3125rem;
+        width: 43%;
+        @include desk {
+            width: 100%;
+            max-width: 26.875rem;
+            padding: 1.125rem 1.75rem;
+        }
+
+        &::placeholder {
+            color: var(--c-grey-dark);
+            font-family: var(--ff-merriweather);
+            font-size: .625rem;
+
+            @include desk {
+                font-size: 1.125rem;
+            }
+        }
+    }
+}

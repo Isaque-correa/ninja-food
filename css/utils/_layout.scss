@@ -1,0 +1,15 @@
+.container{
+    @include desk{
+        width: 100%;
+        max-width: 75rem;
+        padding: 0 3.125rem;
+        //justify-content: center;
+
+    }
+}
+.container-post{
+    @include desk-2{
+        width: 100%;
+        max-width: 50rem;
+    }
+}
